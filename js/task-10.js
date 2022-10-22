@@ -21,23 +21,18 @@ let widthValue = 30;
 let heightValue = 30;
 function onCreateBoxes(amount) {
 	amount = inputNumber;
-
 	const boxesArray = [];
+
 	for (let i = 0; i < amount; i += 1) {
 		const boxesMurkup = `<div style=" background-color: ${getRandomHexColor()}; width: ${widthValue}px; height: ${heightValue}px"></div>`;
+
 		widthValue += 10;
 		heightValue += 10;
-		// console.log(boxesMurkup);
+
 		boxesArray.push(boxesMurkup);
 	}
-	let stringMarkup = boxesArray.join('');
-	console.log(stringMarkup);
 
 	refs.boxesField.insertAdjacentHTML('afterbegin', boxesArray.join(''));
-	// console.log(boxesArray);
-
-	console.log('Create click');
-	console.log(refs.inputValue.value);
 }
 
 function onDestroyBoxes() {

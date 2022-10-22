@@ -5,9 +5,6 @@ const refs = {
 };
 refs.changeColorBtnRef.addEventListener('click', onRandomBodyPointer);
 
-console.log(refs.bodyRef);
-console.log(refs.changeColorBtnRef);
-
 function onRandomBodyPointer() {
 	const randomColor = getRandomHexColor();
 

@@ -8,8 +8,6 @@ function onSubmitForm(evt) {
 	const {
 		elements: { email, password },
 	} = evt.currentTarget;
-	// console.log(email.name);
-	// console.log(password.name);
 
 	if (email.value === '' || password.value === '') {
 		return alert('All fields must be filled');

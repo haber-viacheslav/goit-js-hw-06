@@ -22,4 +22,3 @@ const itemsMarkup = images
 	.join('');
 
 listEl.insertAdjacentHTML('beforeend', itemsMarkup);
-console.log(itemsMarkup);

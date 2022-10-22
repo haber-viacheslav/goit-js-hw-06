@@ -15,4 +15,3 @@ const elements = ingredients.map(item => {
 	return listItem;
 });
 listEl.append(...elements);
-console.log(listEl);
